@@ -72,7 +72,9 @@ export default function App() {
             className="mt-12 flex flex-col items-center gap-4 w-full"
           >
             <a
-              href="#oferta"
+              href="https://pay.hotmart.com/K105529713A"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex w-full sm:w-auto items-center justify-center rounded-xl bg-gradient-to-br from-gold to-gold-light px-8 py-5 font-display text-lg font-bold text-white shadow-[0_10px_40px_rgba(200,134,10,0.3)] transition-transform hover:scale-[1.02] hover:shadow-[0_15px_50px_rgba(200,134,10,0.4)]"
             >
               Quero acesso agora por R$ 37,90 &rarr;
@@ -334,7 +336,9 @@ export default function App() {
             </div>
             
             <a
-              href="#"
+              href="https://pay.hotmart.com/K105529713A"
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-8 block w-full rounded-xl bg-gradient-to-br from-gold to-gold-light px-8 py-5 font-display text-lg font-bold text-white shadow-[0_10px_30px_rgba(200,134,10,0.3)] transition-transform hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(200,134,10,0.5)]"
             >
               Quero meu E-book Agora &rarr;
@@ -419,7 +423,9 @@ export default function App() {
           <span className="font-serif text-xl font-bold text-white">R$ 37,90</span>
         </div>
         <a 
-          href="#oferta" 
+          href="https://pay.hotmart.com/K105529713A" 
+          target="_blank"
+          rel="noopener noreferrer"
           className="rounded-lg bg-gradient-to-r from-gold to-gold-light px-5 py-3 font-display text-sm font-bold text-white shadow-lg"
         >
           Garantir Agora
