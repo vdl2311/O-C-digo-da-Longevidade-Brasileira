@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-display: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-forest: #0F4525;
+  --color-forest-light: #1A6B3C;
+  --color-gold: #C8860A;
+  --color-gold-light: #E9A82A;
+  --color-cream: #FAF6EF;
+  --color-cream-dark: #F0E9DC;
+  --color-ink: #2A2016;
+  --color-stone: #6B6055;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
