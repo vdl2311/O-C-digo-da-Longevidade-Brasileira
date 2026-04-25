@@ -53,22 +53,34 @@ export default function App() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="font-serif text-4xl font-black leading-[1.1] text-white sm:text-5xl md:text-6xl lg:text-[4.5rem]"
           >
-            Descubra o <em className="text-gold-light font-style-italic font-medium">Segredo Digestivo</em> dos Centenários do Interior do Brasil
+            O que comunidades longevas do Brasil fazem no dia a dia — <em className="text-gold-light font-style-italic font-medium">e por que isso tem chamado a atenção de pesquisadores</em>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="mt-8 max-w-2xl text-lg leading-relaxed text-white/80"
+            className="mt-6 max-w-2xl text-xl font-medium text-gold-light"
           >
-            O manual focado em estilo de vida e escolhas alimentares baseado nos hábitos rurais de populações longevas — para quem busca mais conforto abdominal e bem-estar natural.
+            Sem dietas extremas, sem produtos caros — apenas ajustes simples baseados em hábitos reais.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+            className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80"
+          >
+            Hábitos simples, muitas vezes ignorados na rotina moderna, que vêm sendo observados em regiões com alta longevidade no Brasil.
+            <br className="hidden sm:block" />
+            <br className="hidden sm:block" />
+            Um material prático e direto ao ponto com exemplos do cotidiano real, adaptável à rotina atual, sem a necessidade de mudanças radicais para quem busca mais equilíbrio e bem-estar natural.
           </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
+            transition={{ duration: 0.7, delay: 0.4 }}
             className="mt-12 flex flex-col items-center gap-4 w-full"
           >
             <a
@@ -77,12 +89,15 @@ export default function App() {
               rel="noopener noreferrer"
               className="inline-flex w-full sm:w-auto items-center justify-center rounded-xl bg-gradient-to-br from-gold to-gold-light px-8 py-5 font-display text-lg font-bold text-white shadow-[0_10px_40px_rgba(200,134,10,0.3)] transition-transform hover:scale-[1.02] hover:shadow-[0_15px_50px_rgba(200,134,10,0.4)]"
             >
-              Quero acesso agora por R$ 37,90 &rarr;
+              Acessar o material completo &rarr;
             </a>
 
-            <div className="flex items-center gap-2 text-sm font-medium text-white/60">
-              <ShieldCheck className="h-4 w-4" />
-              <span>Garantia de 7 dias · Pagamento 100% seguro</span>
+            <div className="flex flex-col items-center gap-2">
+              <div className="flex items-center gap-2 text-sm font-medium text-white/60">
+                <ShieldCheck className="h-4 w-4" />
+                <span>Garantia de 7 dias · Pagamento 100% seguro</span>
+              </div>
+              <span className="text-xs font-medium text-white/50">Acesso imediato após a confirmação.</span>
             </div>
           </motion.div>
         </div>
@@ -97,18 +112,18 @@ export default function App() {
       </section>
 
       {/* STRIP */}
-      <div className="flex flex-wrap justify-center gap-x-12 gap-y-4 border-b border-cream-dark bg-forest-light px-6 py-6 font-display text-sm text-white/80 shadow-sm">
+      <div className="flex flex-wrap justify-center gap-x-12 gap-y-4 border-b border-cream-dark bg-forest-light px-6 py-6 font-display text-sm text-white/80 shadow-sm text-center">
         <div className="flex items-center gap-2">
-          <BookOpen className="h-4 w-4 text-gold-light" />
-          <span><strong className="text-white">7 capítulos</strong> de conteúdo</span>
+          <CheckCircle2 className="h-4 w-4 shrink-0 text-gold-light" />
+          <span><strong className="text-white">Aplicação simples</strong> no cotidiano</span>
         </div>
         <div className="flex items-center gap-2">
-          <ShieldCheck className="h-4 w-4 text-gold-light" />
-          <span><strong className="text-white">Garantia</strong> de 7 dias</span>
+          <CheckCircle2 className="h-4 w-4 shrink-0 text-gold-light" />
+          <span><strong className="text-white">Sem necessidade</strong> de mudanças radicais</span>
         </div>
         <div className="flex items-center gap-2">
-          <Smartphone className="h-4 w-4 text-gold-light" />
-          <span>Leia em <strong className="text-white">qualquer dispositivo</strong></span>
+          <CheckCircle2 className="h-4 w-4 shrink-0 text-gold-light" />
+          <span><strong className="text-white">Adaptável</strong> à rotina moderna</span>
         </div>
       </div>
 
@@ -116,23 +131,21 @@ export default function App() {
       <section className="bg-white px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-5xl">
           <div className="text-center">
-            <span className="font-display text-xs font-bold tracking-[0.2em] text-gold uppercase">Estilo de Vida</span>
+            <span className="font-display text-xs font-bold tracking-[0.2em] text-gold uppercase">Observação Comportamental</span>
             <h2 className="mt-4 font-serif text-3xl font-bold text-forest sm:text-4xl md:text-5xl">
-              O impacto do sistema digestivo na <em className="text-gold font-medium italic">rotina moderna</em>
+              A relação entre rotina moderna e <em className="text-gold font-medium italic">bem-estar</em>
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-stone">
-              Muitas pessoas lidam com inchaço, sensação de peso ou digestão lenta. Um corpo que parece perder o ritmo natural é uma queixa frequente — e a ciência tem explorado o impacto dos nossos hábitos alimentares modernos.
+              Muitas pessoas relatam variações no bem-estar ao longo do dia. O ritmo agitado, combinado com escolhas alimentares modernas, tem levado estudiosos a analisarem exemplos práticos e costumes simples para uma vida mais equilibrada.
             </p>
           </div>
 
-          <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-2 max-w-4xl mx-auto">
             {[
-              "A percepção frequente de inchaço abdominal matinal, impactando o bem-estar diário.",
-              "A sensação de trânsito intestinal lento e a variação no conforto ao longo dos dias.",
-              "A busca contínua por estratégias alimentares que auxiliem no conforto a longo prazo.",
-              "A sensação de lentidão e peso após as refeições frequente no cotidiano agitado.",
-              "O impacto de uma digestão desregulada na disposição e energia para momentos de lazer.",
-              "A compreensão de que o bem-estar do corpo e do sistema digestivo muda com o passar dos anos."
+              "Variações no bem-estar ao longo do dia que influenciam a rotina.",
+              "Interesse crescente por rotinas simples e exemplos práticos no dia a dia.",
+              "O interesse na aplicação simples de ingredientes naturais para cultivar uma sensação de maior leveza.",
+              "Pequenos ajustes que, ao longo dos dias, podem tornar a rotina mais leve, organizada e previsível."
             ].map((text, i) => (
               <motion.div
                 key={i}
@@ -153,16 +166,16 @@ export default function App() {
       {/* CENTENARIOS */}
       <section className="bg-cream-dark/30 px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-4xl">
-          <span className="font-display text-xs font-bold tracking-[0.2em] text-gold uppercase">A descoberta</span>
+          <span className="font-display text-xs font-bold tracking-[0.2em] text-gold uppercase">Uma Visão Diferente</span>
           <h2 className="mt-4 font-serif text-3xl font-bold text-forest sm:text-4xl md:text-5xl">
-            Enquanto isso, no interior do Brasil...
+            Estudos de Populações Longevas
           </h2>
           <div className="mt-8 space-y-6 text-lg text-stone">
-            <p>
-              Em pequenas cidades e sítios espalhados pelo país, existem pessoas de <strong className="text-ink font-semibold">90, 100 e até mais de 110 anos</strong> que acordam dispostas, comem com prazer e nunca souberam o que é um laxante. Não é genética. É hábito.
+            <p className="font-medium text-forest text-xl">
+              O que chama atenção nesses locais não é apenas a idade avançada, mas a consistência de hábitos simples mantidos ao longo dos anos — muitos deles esquecidos na rotina moderna.
             </p>
             <p>
-              A maior concentração de centenários ativos do Brasil está em municípios do interior — onde a comida ainda vem do quintal, o ritmo ainda respeita o corpo e o intestino ainda funciona como deveria.
+              Nessas regiões, a cultura de cultivar o próprio alimento e seguir um ritmo mais conectado ao tempo natural tem chamado a atenção, promovendo uma compreensão diferente sobre o equilíbrio do corpo.
             </p>
           </div>
 
@@ -186,10 +199,10 @@ export default function App() {
           >
             <div className="absolute top-[-30px] left-[-10px] text-[12rem] font-serif leading-none text-white/5 select-none font-bold">"</div>
             <p className="relative z-10 font-serif text-xl sm:text-2xl italic leading-relaxed text-white/90">
-              O que intriga os pesquisadores não é apenas a longevidade dessas pessoas, mas a qualidade da saúde digestiva que elas mantêm aos 90 e 100 anos — um trato digestivo tão eficiente quanto o de um jovem atleta.
+              Estudos sobre populações longevas no Brasil mostram padrões interessantes de alimentação e rotina que podem influenciar na compreensão geral sobre o bem-estar ao longo do tempo.
             </p>
             <cite className="relative z-10 mt-8 block font-display text-sm font-bold text-gold-light not-italic tracking-wider uppercase">
-              — Baseado em estudos sobre populações longevas rurais
+              — Baseado em observações de populações rurais
             </cite>
           </motion.div>
         </div>
@@ -205,12 +218,12 @@ export default function App() {
           
           <div className="mt-16 grid gap-4 text-left sm:gap-6">
             {[
-              { icon: <TestTube />, title: "A Biologia Intestinal", desc: "Informações educacionais sobre o ambiente digestivo natural e adaptações de hábitos alimentares." },
-              { icon: <Brain />, title: "A conexão intestino-cérebro", desc: "Como o estresse diário interage com o sistema digestivo e táticas voltadas ao relaxamento." },
-              { icon: <Droplets />, title: "Hábitos Matinais", desc: "Práticas simples de hidratação que buscam apoiar o ritmo fisiológico do corpo." },
-              { icon: <Leaf />, title: "Gorduras e Fibras Integradas", desc: "O papel de óleos alimentares e sementes comuns na alimentação focada em bem-estar." },
-              { icon: <CheckCircle2 />, title: "Escolha dos Alimentos", desc: "Informações sobre como alimentos in natura interagem com o balanço bacteriano em contraposição aos ultraprocessados." },
-              { icon: <Clock />, title: "A influência da Postura", desc: "Informações sobre ergonomia no banheiro e o apoio à biomecânica natural do corpo." },
+              { icon: <TestTube />, title: "A Biologia Alimentar", desc: "Informações educacionais sobre o ambiente natural do corpo e adaptações de hábitos alimentares." },
+              { icon: <Brain />, title: "Interações do Corpo", desc: "Como a rotina agitada diária e o nível de estresse podem interagir com o equilíbrio geral." },
+              { icon: <Droplets />, title: "Hábitos Matinais", desc: "Práticas leves de hidratação que ajudam a apoiar os processos fisiológicos matutinos." },
+              { icon: <Leaf />, title: "Gorduras e Fibras", desc: "A utilização tradicional de óleos alimentares e sementes em rotinas focadas em qualidade de vida." },
+              { icon: <CheckCircle2 />, title: "Escolhas In Natura", desc: "Compreensão sobre o comportamento de alimentos menos processados na rotina nutricional diária." },
+              { icon: <Clock />, title: "Adaptações Posturais", desc: "Conceitos de ergonomia aplicados a práticas comuns e respeito à biomecânica do corpo." },
             ].map((item, i) => (
               <motion.div 
                 key={i}
@@ -239,10 +252,10 @@ export default function App() {
           <div className="mx-auto max-w-2xl text-center">
             <span className="font-display text-xs font-bold tracking-[0.2em] text-gold-light uppercase">O roteiro completo</span>
             <h2 className="mt-4 font-serif text-3xl font-bold sm:text-4xl md:text-5xl">
-              O Plano de <em className="text-gold-light font-medium italic">14 Dias</em>
+              O Roteiro Flexível de <em className="text-gold-light font-medium italic">14 Dias</em>
             </h2>
             <p className="mt-6 text-lg text-white/70">
-              Três fases progressivas que guiam o seu corpo da limpeza à restauração completa.
+              Três fases progressivas para ajudar a adaptar sua rotina de forma simples e consistente.
             </p>
           </div>
 
@@ -318,10 +331,13 @@ export default function App() {
         <div className="absolute top-0 right-0 h-full w-full opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 70% 30%, #E9A82A 0%, transparent 60%)' }}></div>
         
         <div className="relative z-10 mx-auto max-w-3xl text-center w-full">
-          <span className="font-display text-xs font-bold tracking-[0.2em] text-gold-light uppercase">Acesso ao Material</span>
+          <span className="font-display text-xs font-bold tracking-[0.2em] text-gold-light uppercase">Material de Estudo</span>
           <h2 className="mt-4 font-serif text-3xl font-bold text-white sm:text-5xl">
-            Conheça o protocolo guiado de <em className="text-gold-light font-medium italic">14 dias.</em>
+            Inicie sua jornada de aprendizado em <em className="text-gold-light font-medium italic">14 dias.</em>
           </h2>
+          <p className="mt-6 text-lg text-white/80">
+            Um material direto ao ponto, pensado para quem prefere entender e aplicar hábitos simples no dia a dia, sem depender de soluções complexas.
+          </p>
           
           <div className="mt-12 glass-panel rounded-[2rem] p-8 sm:p-12 border border-white/10 shadow-2xl relative overflow-hidden backdrop-blur-xl">
             {/* Shimmer effect */}
@@ -341,11 +357,13 @@ export default function App() {
               rel="noopener noreferrer"
               className="mt-8 block w-full rounded-xl bg-gradient-to-br from-gold to-gold-light px-8 py-5 font-display text-lg font-bold text-white shadow-[0_10px_30px_rgba(200,134,10,0.3)] transition-transform hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(200,134,10,0.5)]"
             >
-              Quero meu E-book Agora &rarr;
+              Acessar o material completo &rarr;
             </a>
             
             <div className="mt-6 font-display text-xs text-white/50 uppercase tracking-widest">
               Acesso vitalício · PDF + Leitura Online
+              <br className="mt-2 block" />
+              <span className="text-white/80 mt-2 block">Acesso imediato após a confirmação.</span>
             </div>
 
             <div className="mt-10 flex flex-col sm:flex-row items-center gap-4 rounded-xl bg-white/5 p-5 border border-white/10 text-left">
@@ -372,9 +390,9 @@ export default function App() {
           <div className="space-y-4">
             {[
               { q: "Como recebo o e-book após a compra?", a: "O acesso é imediato. Logo após a confirmação do pagamento, você receberá um e-mail com o link para download do PDF e para leitura online em qualquer dispositivo." },
-              { q: "Preciso comprar algum produto especial ou suplemento caro?", a: "Não. O protocolo foi desenvolvido com ingredientes simples encontrados em qualquer feira ou mercado do Brasil — como quiabo, linhaça, azeite e mamão. Sem importados." },
-              { q: "Funciona para quem tem mais de 60 anos?", a: "Sim. O protocolo foi criado pensando especialmente nas mudanças naturais do sistema digestivo com o envelhecimento." },
-              { q: "O conteúdo substitui o acompanhamento médico?", a: "Não. Este e-book tem caráter educativo e informativo. Sempre consulte um médico ou nutricionista para orientações personalizadas sobre sua saúde." }
+              { q: "Preciso comprar produtos especiais ou suplementos caros?", a: "Não. As informações contidas no roteiro utilizam como base alimentos de fácil acesso, encontrados em feiras livres e mercados, focando na simplicidade da cultura rural." },
+              { q: "O conteúdo é adequado para qualquer faixa etária?", a: "Sim, os conceitos de alimentação natural são apresentados de forma adaptável, voltados a adultos interessados em adotar hábitos alimentares mais atentos." },
+              { q: "O conteúdo substitui o acompanhamento médico?", a: "Não. Este e-book tem caráter exclusivamente educativo. As adaptações no estilo de vida não substituem a necessidade de acompanhamento com um médico ou nutricionista qualificado." }
             ].map((faq, i) => (
               <div key={i} className="rounded-2xl border border-cream-dark bg-cream overflow-hidden">
                 <button 
@@ -428,7 +446,7 @@ export default function App() {
           rel="noopener noreferrer"
           className="rounded-lg bg-gradient-to-r from-gold to-gold-light px-5 py-3 font-display text-sm font-bold text-white shadow-lg"
         >
-          Garantir Agora
+          Acessar Agora
         </a>
       </div>
       
